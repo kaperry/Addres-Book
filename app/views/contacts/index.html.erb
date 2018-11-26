@@ -1,0 +1,26 @@
+<h1>Address Book Contacts</h1>
+
+<table>
+    <tr>
+        <th>Last</th>
+        <th>First</th>
+    </tr>
+    
+    
+    
+    
+    <% @contacts.each do |contact| %>
+    
+        <tr>
+            <td><%= contact.last %></td>
+            <td><%=contact.first%></td>
+            <td><%= link_to 'Show', contact_path(contact) %></td>
+            <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+            <td><%= link_to 'Destroy',
+                                contact_path(contact),
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+        </tr>
+</table>

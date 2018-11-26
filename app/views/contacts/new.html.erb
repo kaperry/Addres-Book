@@ -1,0 +1,56 @@
+<h1>Create New Contact </h1>
+
+<%= form_for :contact, url: contacts_path  do |f| %>
+    <p>
+        
+        <% f.label :last %> Last Name: 
+        <%= f.text_field :last %> 
+    </p>
+    
+    
+    <p>
+         <% f.label :first %> First Name: 
+        <%= f.text_field :first %> 
+        
+    </p>
+    
+     <p>
+         <% f.label :company %> Company: 
+        <%= f.text_field :company %> 
+        
+    </p>
+    
+    <p>
+         <% f.label :address %> Home Address: 
+        <%= f.text_field :address %> 
+        
+    </p>
+    
+    <p>
+         <% f.label :email %> Email Address: 
+        <%= f.text_field :email %> 
+        
+    </p>
+    
+       <p>
+         <% f.label :home %> Home Phone:
+        <%= f.text_field :home %> 
+        
+    </p>
+    
+      <p>
+         <% f.label :cell %> Cell Phone: 
+        <%= f.text_field :cell %> 
+        
+    </p>
+      <p>
+         <% f.label :work %> Work Phone:
+        <%= f.text_field :work %> 
+        
+    </p>
+    
+    <p>
+        <%= f.submit %>
+    </p>
+    
+    <%end%>
