@@ -1,4 +1,15 @@
 class EventsController < ApplicationController
+   def index
+   
+   @events = Event.all
+   
+   end 
+   
+   def show 
+     @contact = Contact.find(params[:id]) 
+     @event = Event.find(params[:id])
+ end
+   
     def create
     
         @contact = Contact.find(params[:contact_id])
@@ -9,6 +20,6 @@ class EventsController < ApplicationController
     private
     
     def event_params
-        params.require(:event).permit(:location, :date, :time)
+        params.require(:event).permit(:name, :location, :date, :time)
     end
 end

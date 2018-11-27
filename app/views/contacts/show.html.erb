@@ -39,9 +39,14 @@
     
 </p>
 
-<h2> Events </h2>
+<h3> Events </h3>
 
 <% @contact.events.each do |event| %>
+
+<p>
+    <strong>Type of Event</strong>
+    <%= event.name %>
+</p>
 
 <p>
     <strong>Location</strong>
@@ -60,9 +65,17 @@
 </p>
 <% end%>
 
-<h2>Add an Event</h2>
+<h3>Add an Event</h3>
 
 <%= form_for([@contact, @contact.events.build]) do |f| %>
+
+<p>
+    <% f.label :name %> Type of Event <br>
+    <%= f.text_field :name %>
+    
+</p>
+
+
 <p>
     <% f.label :location %> Location <br>
     <%= f.text_field :location %>
