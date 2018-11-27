@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
    def index
-   
+   @contacts = Contact.all
    @events = Event.all
    
    end 
