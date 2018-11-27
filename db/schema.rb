@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_26_231649) do
+ActiveRecord::Schema.define(version: 2018_11_26_234733) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "first"
@@ -23,6 +23,16 @@ ActiveRecord::Schema.define(version: 2018_11_26_231649) do
     t.string "work"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "location"
+    t.string "date"
+    t.string "time"
+    t.integer "contact_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["contact_id"], name: "index_events_on_contact_id"
   end
 
 end
