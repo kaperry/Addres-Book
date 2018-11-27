@@ -47,7 +47,7 @@ class ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
     @contact.destroy
     
-    redirect_to contact_path
+    redirect_to contacts_path
   end
   
 end 
