@@ -39,4 +39,50 @@
     
 </p>
 
-<%= link_to 'Back', contacts_path %> 
+<h2> Events </h2>
+
+<% @contact.events.each do |event| %>
+
+<p>
+    <strong>Location</strong>
+    <%= event.location %>
+</p>
+
+
+<p>
+    <strong>Date</strong>
+    <%= event.date %>
+</p>
+
+<p>
+    <strong>Time</strong>
+    <%= event.time %>
+</p>
+<% end%>
+
+<h2>Add an Event</h2>
+
+<%= form_for([@contact, @contact.events.build]) do |f| %>
+<p>
+    <% f.label :location %> Location <br>
+    <%= f.text_field :location %>
+    
+</p>
+<p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+</p>
+<p>
+    <%= f.label :time %><br>
+    <%= f.text_field:time %>
+</p>
+<p>
+    <%= f.submit %>
+</p>
+
+
+
+<%end%>
+
+ <%= link_to 'Back', contacts_path %>
+ 

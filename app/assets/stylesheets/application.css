@@ -6,6 +6,15 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    text-align: center;
+}
+
+ 
+
 body {
     
     background-color: lightblue;
@@ -34,4 +43,13 @@ input[type=button], input[type=submit]{
     padding: 16px 20px;
     text-decoration: none;
     cursor: pointer;
+}
+
+table {
+    width: 70%;
+}
+
+th{
+    text-align: left;
+    height: 45px;
 }
