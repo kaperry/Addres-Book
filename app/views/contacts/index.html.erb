@@ -3,13 +3,15 @@
 
 
 <strong>Search Bar: </strong>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Contact by name">
+<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for Contact by Name">
 <table id = "contactTable">
-    <tr><th>CONTACTS</th></tr>
+    
+    <th>Contacts</th>
+    </tr>
     <tr>
-        <th>Last</th>
-        <th>First</th>
-        <th>Actions</th>
+     <th>Last</th>
+     <th>First</th>
+     <th>Actions</th>
     </tr>
     
     
@@ -18,7 +20,7 @@
     <% @contacts.each do |contact| %>
     
         <tr>
-            <td><%= contact.last %></td>
+            <td><%=contact.last %></td>
             <td><%=contact.first%></td>
             <td><%= link_to 'Show', contact_path(contact) %></td>
             <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
