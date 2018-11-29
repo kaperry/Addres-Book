@@ -3,48 +3,48 @@
 <%= form_for :contact, url: contacts_path  do |f| %>
     <p>
         
-        <% f.label :last %> Last Name: 
+        <%= f.label :last %>
         <%= f.text_field :last %> 
     </p>
     
     
     <p>
-         <% f.label :first %> First Name: 
+         <%= f.label :first %> 
         <%= f.text_field :first %> 
         
     </p>
     
      <p>
-         <% f.label :company %> Company: 
+         <%= f.label :company %> 
         <%= f.text_field :company %> 
         
     </p>
     
     <p>
-         <% f.label :address %> Home Address: 
+         <%= f.label :address %>  
         <%= f.text_field :address %> 
         
     </p>
     
     <p>
-         <% f.label :email %> Email Address: 
+         <%= f.label :email %>
         <%= f.text_field :email %> 
         
     </p>
     
        <p>
-         <% f.label :home %> Home Phone:
+         <%= f.label :home %> 
         <%= f.text_field :home %> 
         
     </p>
     
       <p>
-         <% f.label :cell %> Cell Phone: 
+         <%= f.label :cell %> 
         <%= f.text_field :cell %> 
         
     </p>
       <p>
-         <% f.label :work %> Work Phone:
+         <%= f.label :work %> 
         <%= f.text_field :work %> 
         
     </p>
