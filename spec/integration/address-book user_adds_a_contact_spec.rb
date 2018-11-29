@@ -6,13 +6,13 @@ feature "Address-Book user adds a contact" do
         expect(page). to have_content("Address Book Contacts")
         click_link "New Contact"
         expect(page).to have_content("New Contact")
-        expect(page).to have_content("Last Name:")
-        expect(page).to have_content("First Name:")
-        expect(page).to have_content("Company")
-        expect(page).to have_content("Home Address")
-        expect(page).to have_content("Email Address")
-        expect(page).to have_content("Home Phone")
-        expect(page).to have_content("Cell Phone")
-        expect(page).to have_content("Work Phone")
+        expect(page).to have_field("Last")
+        expect(page).to have_field("First")
+        expect(page).to have_field("Company")
+        expect(page).to have_field("Address")
+        expect(page).to have_field("Email")
+        expect(page).to have_field("Home")
+        expect(page).to have_field("Cell")
+        expect(page).to have_field("Work")
     end
 end    
