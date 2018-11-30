@@ -23,6 +23,14 @@ end
         redirect_to contact_path(@contact)
     end 
     
+      def destroy 
+    @event = Event.find(params[:id])
+    @event.destroy
+    
+    redirect_to contacts_path
+  end
+  
+    
     private
     
     def event_params

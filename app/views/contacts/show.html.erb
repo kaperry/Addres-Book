@@ -69,6 +69,12 @@
     <strong>Time</strong>
     <%= event.time %>
 </p>
+
+<p>
+ <%= link_to 'Destory Event', [event.contact,event],
+                method: :delete,
+                data: {confirm:'Are you sure?'} %>
+</p>
 <% end%>
 
 <h3>Add an Event</h3>
