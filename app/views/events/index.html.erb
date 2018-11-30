@@ -1,11 +1,11 @@
+
+<h2>Events</h2>
+
 <table>
-    <tr>
-        <th>EVENTS</th>
-       
-        
-    </tr>
+   
     
     <tr>
+        <th>Contact Name</th>
         <th> Name of Event</th>
         <th> Date</th>
     </tr>
@@ -18,7 +18,7 @@
     
      <tr>
          
-        
+        <td><%= event.contact.first%>  <%= event.contact.last%></td>
         <td><%= event.name%></td>
          <td><%= event.date %></td>
           <td><%= link_to 'Show', contact_path(event) %></td>

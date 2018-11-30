@@ -2,11 +2,11 @@
 <%= link_to 'New Contact', new_contact_path %><br><br>
 
 
-<strong>Search Bar: </strong>
-<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for Contact by Name">
+<strong text-align: "center">Search Bar: </strong>
+<input text-align: "center" type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for Contact by Name">
 <table id = "contactTable">
     
-    <th>Contacts</th>
+    
     </tr>
     <tr>
      <th>Last</th>
@@ -22,20 +22,17 @@
         <tr>
             <td><%=contact.last %></td>
             <td><%=contact.first%></td>
-            <td><%= link_to 'Show', contact_path(contact) %></td>
-            <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-            <td><%= link_to 'Destroy',
-                                contact_path(contact),
-                                method: :delete,
-                                data: { confirm: 'Are you sure?' } %></td>
+            <td><button type = "button"><%= link_to 'Contact Info', contact_path(contact) %></button></td>
+            <td><button type = "button"><%= link_to 'Edit', edit_contact_path(contact) %></button></td>
+           
     </tr>
   <% end %>
         
 </table>
 
-
+<h3 id = "event">Events</h3>
 <a href = contacts/:contact_id/events>
-<img src="/assets/calender.png" alt="Events" height = "5%" width = "5%" align = "right">
+<img src="/assets/calender.png" alt="Events" height = "15%" width = "15%" align = "right" id = "calender">
 
 </a>
 

@@ -1,15 +1,15 @@
 
 h1{
     font-size: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
+    font-family: georgia, serif;
+    color: skyblue;
     text-align: center;
 }
 
 h2{
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
+    font-family: georgia, serif;
+    color: skyblue;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ h2{
 
 body {
     
-    background-color: lightblue;
+    background-color: #DCDCDC;
 }
 
 img { 
@@ -32,7 +32,7 @@ input[type = text]{
     padding: 12px;
     border: 2px solid #ccc;
     background-color: #C59284;
-    color: #fff;
+    
 }
 
 input[type=button], input[type=submit]{
@@ -46,10 +46,59 @@ input[type=button], input[type=submit]{
 }
 
 table {
-    width: 70%;
+    width: 60%;
+    margin-left: 2%;
+    margin-top:5%;
+    padding-left:5%;
+    float:left;
+    font-size: "Comic Sans MS", cursive, sans-serif;
+    border: 1px solid black ;
 }
 
 th{
     text-align: left;
     height: 45px;
+}
+
+#calender {
+    
+    padding-left: 10%;
+    padding-right:10%;
+    margin-bottom: 80%;
+    
+}
+
+#event{
+    
+    
+    margin-top: 5%;
+    padding-right:15%;
+    
+    float: right;
+}
+
+#myInput
+{
+  
+  margin-right: auto;
+  margin-left: auto; 
+     
+}
+
+a:link, a:visited {
+    
+    border-color: #4CAF50;
+    color: green;
+    text-decoration:none;
+}
+
+#contactform{
+    
+    margin-left:10%;
+    float: left;
+}
+
+#eventform{
+    float:right;
+    margin-right:10%;
 }

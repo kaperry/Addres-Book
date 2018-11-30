@@ -1,3 +1,8 @@
+
+<h2>Contact Info</h2>
+
+<div id="contactform">
+<h3>Contact</h3>
 <p>
     <strong>First Name: </strong>
     <%= @contact.first %>
@@ -35,10 +40,11 @@
     
     <strong>Work Phone: </strong>
     <%= @contact.work %>
-    
+   
     
 </p>
-
+</div>
+<div id="eventform">
 <h3> Events </h3>
 
 <% @contact.events.each do |event| %>
@@ -93,9 +99,15 @@
     <%= f.submit %>
 </p>
 
+</div>
 
 
 <%end%>
+
+ <button type = "button" id ="delete"><%= link_to 'Destroy',
+                                contact_path(@contact),
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %></button>
 
  <%= link_to 'Back', contacts_path %>
  

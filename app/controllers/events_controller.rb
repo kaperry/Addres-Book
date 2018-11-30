@@ -1,12 +1,18 @@
 class EventsController < ApplicationController
    def index
-   @contacts = Contact.all
+
    @events = Event.all
    
    end 
    
    def show 
-     @contact = Contact.find(params[:id]) 
+       
+       @vontact = COntact.find 1
+@contact.contacts.each do |contact|
+   puts contact.last & contact.first
+end
+       
+    
      @event = Event.find(params[:id])
  end
    
