@@ -21,11 +21,17 @@
         <td><%= event.contact.first%>  <%= event.contact.last%></td>
         <td><%= event.name%></td>
          <td><%= event.date %></td>
-          <td><%= link_to 'Show', contact_path(event) %></td>
-    
+         <td><button type = "button" id="button1"><%= link_to 'View', contact_path(event) %></button>
+    </td>
      </tr>
      <%end%>
-    
+     
   </table>
 
-   <%= link_to 'Back', contacts_path %> 
+
+
+
+
+<p>
+<button type="button" id="show"><%= link_to 'Back', contacts_path %> </button>
+</p>

@@ -17,10 +17,12 @@ h2{
 
 body {
     
+    font-size: 35px;
     background-color: #DCDCDC;
 }
 
 img { 
+  
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,13 +33,14 @@ input[type = text]{
     width: 50%;
     padding: 12px;
     border: 2px solid #ccc;
-    background-color: #C59284;
+    
     
 }
 
 input[type=button], input[type=submit]{
-    background-color: #568A7E;
-    float: right;
+    background-color: skyblue;
+    font-weight:bold;
+    font-size:25px;
     border: none;
     color: white;
     padding: 16px 20px;
@@ -71,7 +74,7 @@ th{
 #event{
     
     
-    margin-top: 5%;
+    margin-bottom:5%;
     padding-right:15%;
     
     float: right;
@@ -85,20 +88,115 @@ th{
      
 }
 
-a:link, a:visited {
-    
-    border-color: #4CAF50;
-    color: green;
+#back{
+    background-color:white;
+    border-color:skyblue;
+}
+
+#back a:link{
+    border-color: skyblue;
+    color:skyblue;
     text-decoration:none;
+    font-weight:bold;
+    font-size:30px;
+    text-align:left;
+    
+}
+
+#back a:visited{
+   border-color: blue;
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:30px;
+    text-align:left;}
+
+#show{
+    
+    border-color:skyblue;
+    margin-top: 10%;
+    margin-right:70%;
+    background-color:white;
+}
+
+#show a:link{
+    border-color: skyblue;
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:30px;
+    text-align:left;
+    
+}
+
+#show a:visited{
+   border-color: blue;
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:30px;
+    text-align:left;
+}
+
+
+#button1{
+    
+    background-color:white;
+    border-color:skyblue;
+    
+}
+
+#button1 a:link{
+    
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+}
+
+#button1 a:visited{
+   
+    color:skyblue;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+}
+
+
+#delete
+{
+    border-color:red;
+    background-color:white;
+    margin-left:5%;
+}
+
+#delete a:link
+{
+    
+    text-decoration:none;
+   color:red;
+    font-weight:bold;
+    font-size:25px;
+    text-align:middle;
+}
+
+#delete a:visited
+{
+    text-decoration:none;
+    color:red;
+    font-weight:bold;
+    font-size:25px;
 }
 
 #contactform{
     
-    margin-left:10%;
+   ;
     float: left;
 }
 
 #eventform{
     float:right;
-    margin-right:10%;
+    margin-right:5%;
+    
 }
+
