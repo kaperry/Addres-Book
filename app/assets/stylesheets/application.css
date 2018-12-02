@@ -49,13 +49,14 @@ input[type=button], input[type=submit]{
 }
 
 table {
-    width: 60%;
+    width: 55%;
     margin-left: 2%;
     margin-top:5%;
     padding-left:5%;
     float:left;
     font-size: "Comic Sans MS", cursive, sans-serif;
-    border: 1px solid black ;
+    
+    
 }
 
 th{
@@ -65,16 +66,18 @@ th{
 
 #calender {
     
-    padding-left: 10%;
+    margin-right: 10%;
+    
+    margin-left: 75%;
     padding-right:10%;
     margin-bottom: 80%;
-    
+    display:inline;
 }
 
 #event{
     
     
-    margin-bottom:5%;
+    margin-bottom:0%;
     padding-right:15%;
     
     float: right;
@@ -82,7 +85,7 @@ th{
 
 #myInput
 {
-  
+  width:30%;
   margin-right: auto;
   margin-left: auto; 
      

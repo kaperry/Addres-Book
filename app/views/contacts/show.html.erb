@@ -2,7 +2,7 @@
 <h2>Contact Info</h2>
 
 
-<h3>Contact</h3>
+
 <div id ="eventform">
 <h3> Events </h3>
 
@@ -33,10 +33,14 @@
 <button type = "button" id ="delete"> <%= link_to 'Destory Event', [event.contact,event],
                 method: :delete,
                 data: {confirm:'Are you sure?'} %></button>
+                
+ 
 </p>
 <% end%>
+<button type="button" id="back"><%= link_to 'Create New Event', new_contact_event_path(@contact) %></button>
 </div>
 <div id="contactform">
+    <h3>Contact</h3>
 <p>
     <strong>First Name: </strong>
     <%= @contact.first %>
@@ -88,37 +92,4 @@
  
  </p>
  
-<h3>Add an Event</h3>
-
-<%= form_for([@contact, @contact.events.build]) do |f| %>
-
-<p>
-    <% f.label :name %> Type of Event <br>
-    <%= f.text_field :name %>
-    
-</p>
-
-
-<p>
-    <% f.label :location %> Location <br>
-    <%= f.text_field :location %>
-    
-</p>
-<p>
-    <%= f.label :date %><br>
-    <%= f.text_field :date %>
-</p>
-<p>
-    <%= f.label :time %><br>
-    <%= f.text_field:time %>
-</p>
-<p>
-    <%= f.submit %>
-</p>
-
-</div>
-
-
-<%end%>
-
-
+ 

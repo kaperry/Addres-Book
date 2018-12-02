@@ -1,0 +1,36 @@
+<h3>Add an Event</h3>
+
+
+<%= form_for :event, url: contact_events_path do |f| %>
+
+
+
+<p>
+    <% f.label :name %> Type of Event <br>
+    <%= f.text_field :name %>
+    
+</p>
+
+
+<p>
+    <% f.label :location %> Location <br>
+    <%= f.text_field :location %>
+    
+</p>
+<p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+</p>
+<p>
+    <%= f.label :time %><br>
+    <%= f.text_field:time %>
+</p>
+<p>
+    <%= f.submit %>
+</p>
+
+</div>
+
+<%end%>
+
+ <button type="button" id="back"><%= link_to 'Back', contacts_path(@contact) %></button>

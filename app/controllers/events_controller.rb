@@ -1,4 +1,9 @@
 class EventsController < ApplicationController
+  
+  def new
+      
+      @event = Event.new
+ end
    def index
 
    @events = Event.all
@@ -7,8 +12,8 @@ class EventsController < ApplicationController
    
    def show 
        
-       @vontact = COntact.find 1
-@contact.contacts.each do |contact|
+     @contact = Contact.find 1
+  @contact.each do |contact|
    puts contact.last & contact.first
 end
        
@@ -17,8 +22,9 @@ end
  end
    
     def create
-    
-        @contact = Contact.find(params[:contact_id])
+        
+         @event = Event.new(event_params)
+         @contact = Contact.find(params[:contact_id])
         @event = @contact.events.create(event_params)
         redirect_to contact_path(@contact)
     end 
@@ -34,6 +40,6 @@ end
     private
     
     def event_params
-        params.require(:event).permit(:name, :location, :date, :time)
+        params.require(:event).permit(:name, :location, :date, :time, contacts_attributes:[:id])
     end
 end

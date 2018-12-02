@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
     
     def new
       @contact = Contact.new
+      @event = @contact.events.build
     end
     
     def create

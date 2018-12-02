@@ -3,12 +3,14 @@
 <a href= contacts/new>
 <img src="/assets/add.png" alt="Go to W3Schools!" width="42" height="42" border="0" align = "left"> 
 </a>
-Add New Contact
+<h5>Add New Contact</h5>
 </p>
 
 
 <strong text-align: "center">Search Bar: </strong>
 <input text-align: "center" type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for Contact by Name">
+
+
 <table id = "contactTable">
     
     
@@ -16,7 +18,7 @@ Add New Contact
     <tr>
      <th>Last</th>
      <th>First</th>
-     <th>Actions</th>
+     
     </tr>
     
     
@@ -27,21 +29,18 @@ Add New Contact
         <tr>
             <td><%=contact.last %></td>
             <td><%=contact.first%></td>
-            <td><button type = "button" id="button1"><%= link_to 'Contact Info', contact_path(contact) %></button></td>
-            <td><button type = "button" id="button1"><%= link_to 'Edit', edit_contact_path(contact) %></button></td>
+            <td><button type = "button" id="button1"><%= link_to 'Contact Info', contact_path(contact) %></button>
+            <button type = "button" id="button1"><%= link_to 'Edit', edit_contact_path(contact) %></button></td>
            
     </tr>
   <% end %>
   
- 
-                
-        
 </table>
+
 <p>
 <h3 id = "event">Events</h3>
 <a href = contacts/:contact_id/events>
 <img src="/assets/calender.png" alt="Events" height = "15%" width = "15%"  id = "calender" float="right" position="sticky">
 </a>
 </p>
-
 
