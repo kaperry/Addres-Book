@@ -6,6 +6,5 @@ class Contact < ApplicationRecord
     validates :home,  numericality: { only_integer: true }, length: { is: 10 }, allow_blank: true
     validates :cell,  numericality: { only_integer: true }, length: { is: 10 }, allow_blank: true
     validates :home, numericality: { only_integer: true }, length: { is: 10 }, allow_blank: true
-    
    
 end
