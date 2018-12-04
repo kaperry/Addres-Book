@@ -21,7 +21,7 @@
         <td><%= event.contact.first%>  <%= event.contact.last%></td>
         <td><%= event.name%></td>
          <td><%= event.date %></td>
-         <td><button type = "button" id="button1"><%= link_to 'View', contact_path(event) %></button>
+         <td><button type = "button" id="button1"><%= link_to 'View', contact_path(event.contact) %></button>
     </td>
      </tr>
      <%end%>

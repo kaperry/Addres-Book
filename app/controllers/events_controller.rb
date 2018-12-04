@@ -12,7 +12,7 @@ class EventsController < ApplicationController
    
    def show 
        
-     @contact = Contact.find 1
+     @contact = Contact.find 
   @contact.each do |contact|
    puts contact.last & contact.first
 end
@@ -23,8 +23,8 @@ end
    
     def create
         
-         @event = Event.new(event_params)
          @contact = Contact.find(params[:contact_id])
+         @event = Event.new(event_params)
         @event = @contact.events.create(event_params)
         redirect_to contact_path(@contact)
     end 

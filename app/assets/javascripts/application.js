@@ -11,9 +11,11 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require activestorage
+ //=require activestorage
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+
+
  function searchTable() {
     var input, filter, found, table, tr, td, i, j;
     input = document.getElementById("myInput");
@@ -35,4 +37,5 @@
         }
     }
 }
+
 
