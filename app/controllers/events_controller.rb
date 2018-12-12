@@ -30,10 +30,11 @@ end
     end 
     
       def destroy 
+    @contact = Contact.find(params[:contact_id])     
     @event = Event.find(params[:id])
     @event.destroy
     
-    redirect_to contacts_path
+    redirect_to contact_path(@contact)
   end
   
     
